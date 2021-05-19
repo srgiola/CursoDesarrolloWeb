@@ -1,0 +1,4 @@
+1) Live Server
+2) Prettier
+3) Path Intellisense
+4) Live Server Preview (Opcional)
