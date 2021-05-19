@@ -1,0 +1,13 @@
+h1{
+    color: blue;
+}
+p{
+    color: whitesmoke;
+    background-color: crimson;
+    padding: 15px; /* Caja interior al border, locación del objeto */
+    border: 10px solid powderblue; /* Borde */
+    margin: 20px; /* Margen, espacio entre los objetos */
+    /*
+    Comentario en CSS
+    */
+}

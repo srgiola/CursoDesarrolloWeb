@@ -1,0 +1,40 @@
+h1{
+    color: #1d3557;
+}
+#LO{
+    list-style-type: none;
+    background-color: #457bd2;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+/* Se utiliza #ID_en_el_HTML para afectar solo a ciertos objetos */
+#LOL{
+    float: left;
+}
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+}
+li a:hover{
+    background-color: #1d3557;
+
+}
+ol{
+    list-style: none;
+    counter-reset: contador;
+}
+ol li{
+    counter-increment: contador;
+}
+/* la etiqueta before muestra algo de que se muestre el objeto */
+ol li::before{
+    content: 'Curso ' counter(contador) ' ';
+    color: orangered;
+}
+ol li::after{
+    content: '.';
+}

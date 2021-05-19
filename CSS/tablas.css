@@ -1,0 +1,32 @@
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    /* border-spacing: 5px; */
+    padding: 5px;
+}
+caption{
+    color: red;
+    font-family: 'Trocchi', serif;
+    font-size: 45px;
+    line-height: 70px;
+}
+td{
+    text-align: center;
+}
+th{
+    text-align: center;
+}
+th{
+    color: #f1faee;
+    background-color: #1d3551;
+}
+/* 
+nth-child() función para selecionar renglones
+par (even) o impares (odd)
+*/
+tr:nth-child(even){
+    background-color: #f1faee;
+}
+tr:nth-child(odd){
+    background-color: #a9dadc;
+}

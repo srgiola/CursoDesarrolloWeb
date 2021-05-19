@@ -1,0 +1,15 @@
+a:link, a:visited{
+    color: coral;
+    text-decoration: none;
+    padding: 15px 25px;
+    text-align: center;
+    display: inline-block; /* Propiedad para que no se encimen uno sobre otro los objetos */
+}
+a:hover{
+    color: darkcyan;
+    text-decoration: underline;
+}
+a:active{
+    color: darkblue;
+    text-decoration: underline;
+}
