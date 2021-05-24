@@ -1,0 +1,13 @@
+/*
+*{
+    margin: 0;
+    padding: 0;
+}
+*/
+.tarjeta{
+    border: 10px solid purple;
+    background-color: #f1faee;
+    text-align: center;
+    margin: 15px 100px;
+    padding: 15px;
+}
