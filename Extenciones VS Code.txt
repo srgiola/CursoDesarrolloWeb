@@ -2,3 +2,10 @@
 2) Prettier
 3) Path Intellisense
 4) Live Server Preview (Opcional)
+5) Quokka.js
+6) Bracket Pair Colorizer 2
+7) ESLint
+8) Debugger for Chrome (Opcional)
+9) Better Comments (Opcional)
+10) Visual Studio IntelliCode
+11) Quokka Status Bar
