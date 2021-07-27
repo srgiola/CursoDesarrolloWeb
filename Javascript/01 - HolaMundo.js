@@ -1,3 +1,5 @@
+"use strict" //Con esto solo nos permite escribir codigo en buenas practicas
+
 var nombre = "Sergio";
 
 console.log(nombre);
