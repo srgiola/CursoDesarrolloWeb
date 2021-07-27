@@ -69,3 +69,19 @@ let madre = new Persona("Laura", "Quintero", "lquin@mail.com");
 
 console.log(padre);
 console.log(madre);
+
+//Llamar un metodo dentro de un objeto y que funcione para otro objeto
+let persona4 = {
+    nombre: 'Juan',
+    apellido: 'Lopez',
+    nombreCompleto: function(titulo, tel){
+        return titulo + ': ' + this.nombre + ' ' + this.apellido + ' ' + tel;
+    }
+}
+
+let persona5 = {
+    nombre: 'Carla',
+    apellido: 'Lara'
+}
+console.log(persona4.nombreCompleto('Lic.', '98765432'));
+console.log(persona4.nombreCompleto.call(persona5, 'Ing.', '12345678'));

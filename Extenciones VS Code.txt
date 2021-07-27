@@ -8,4 +8,4 @@
 8) Debugger for Chrome (Opcional)
 9) Better Comments (Opcional)
 10) Visual Studio IntelliCode
-11) Quokka Status Bar
+11) Quokka Statusbar buttons

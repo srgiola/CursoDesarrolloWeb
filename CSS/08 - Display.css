@@ -1,0 +1,15 @@
+h1, div, p{
+    border: 3px solid blueviolet;
+    text-align: center;
+    color: cornflowerblue;
+    padding: 10px;
+    display: block;
+    /*
+        block --> Cada elemento es un bloque dentro de la pagina y ocupa su 
+            propio espacio y no puede mesclarze con el otros, ni en la misma linea
+
+        inline --> Cada elemento se mete sobre la linea en que sea invocado
+
+        none --> Se oculta por completo el elemento
+    */
+}

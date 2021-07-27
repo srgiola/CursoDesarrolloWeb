@@ -1,0 +1,21 @@
+html{
+    height: auto;
+    min-height: 100%;
+}
+body{
+    /* Gradiante normal */
+    /* background: linear-gradient(#f72585, #3a0ca3); */
+
+    /* Gradiante con inicio de degradado indicado */
+    /* background: linear-gradient(to rigth, #f72585, #3a0ca3); */
+    /* background: linear-gradient(to bottom right, #f72585, #3a0ca3); */
+    /* background: linear-gradient(to rigth, #f72585, #3a0ca3); */
+    /* background: linear-gradient(145deg, #f72585, #3a0ca3); */
+
+    /* Grandiante circular */
+    /* background: radial-gradient(circle, #f72585, #3a0ca3) */
+
+    /* Gradiante con color regulador entre ambos colores */
+    background: linear-gradient(#24404d, #6dbff1, black);
+    color: whitesmoke;
+}

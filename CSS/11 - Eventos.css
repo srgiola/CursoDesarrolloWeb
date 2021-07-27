@@ -1,0 +1,33 @@
+div.contenedor{
+    width: 30%;
+    height: 20%;
+    margin: auto;
+    border: 3px solid blueviolet;
+    color: blue;
+    padding: 15px;
+}
+
+/* hover --> Cuando se pasa el mouse encima activa el evento */
+div.contenedor:hover{
+    background-color: lightblue;
+    color: whitesmoke;
+}
+
+/* :first-child --> Solo pasa el evento sobre el primer elemento dentro del elemento actual */
+div.contenedor.primero p:first-child{
+    font-variant: small-caps;
+}
+
+/* despues de los :: se muestra los demas sub-elementos */
+div.contenedor p::selection{
+    color: red;
+    background-color: yellow;
+}
+
+/* Transparencia en imagenes */
+img{
+    opacity: 0.3;
+}
+img:hover{
+    opacity: 1;
+}

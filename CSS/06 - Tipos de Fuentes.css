@@ -1,0 +1,60 @@
+/*
+    Familias de Fuentes: 
+    'serif' --> Tienen esquinas redondeadas
+    'sans-serif' --> No tienen esquinas redondeadas
+    'monospace' --> Simulan una maquina de escribir
+    'cursive' --> Son letras cursivas
+*/
+
+/*
+    Se pueden utilizar fuentes de Google las cuales se cargan en la navegación
+    fonts.google.com
+        Luego de selecionar la fuente a utilizar es necesario dar clic en 'import'
+        para la fuente a utilizar y agregarla al css
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+
+h1 {
+    color: #ef476f;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2ppx 2px 2px #ced4da;
+    font-family: 'Sofia', cursive;
+}
+.fuente_times{
+    font-family: 'Times New Roman', Times, serif;
+
+    /* Siver para colocar en Negrita, Cursiva, Tachado, etc */
+    font-style: normal;
+
+    /* font-weight = Ancho de fuente;*/
+    font-weight: 100;
+
+    /* font-variant = Variasiones en los estilos */
+    font-variant: small-caps;
+
+    /* 
+       Tamaño de la fuente 
+       el tamaño se puede especificar con los tamaños predefinidos
+       pero tambien se pueden utilizar los em, vw y vh
+
+       em = 16px/16 --> No Responsive
+       vw = 1% screen --> Responsive respecto al ancho de la pantalla
+       vh = 1% screen --> Responsive respecto al alto de la pantalla
+    */
+    font-size: 1.25em;
+}
+.fuente_georgia{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+.fuente_arial{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.fuente_courier{
+    font-family: 'Courier New', Courier, monospace;
+}
+.fuente_lucida{
+    font-family: 'Lucida Handwriting', cursive;
+}

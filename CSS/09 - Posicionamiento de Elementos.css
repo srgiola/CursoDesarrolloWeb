@@ -1,0 +1,85 @@
+/* Tipos de Posicionamiento (position) :
+        'static' --> No permite que los otros elementos modifiquen la posición y tamaño
+        'relative' --> Se mueve relativamente a dirección de los valores indicados (top, left, rigth, botton) sin interferir con otros elementos
+        'fixed' --> Se mueve segun el viewport (always on screen), teniendo en cuenta los valores indicados (top, left, rigth, botton)
+        'absolute' --> No cambia su posición dentro de un DIV padre
+        'sticky' --> Funciona de manera relativa dentro de la posición donde ha sido llamado, pero cuando sale del viewport cambia a tipo fixed
+*/
+
+/* Z-index:
+        Es el eje Z (la profundida)   
+*/
+div.estatico{
+    position: static;
+    top: 10px;
+    padding: 15px;
+    border: 3px solid greenyellow;
+    background-color: whitesmoke;
+}
+div.relativo{
+    position: relative;
+    top: 10px;
+    left: 10px;
+    padding: 10px;
+    border: 3px solid blueviolet;
+    background-color: whitesmoke;
+}
+div.absoluto{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    padding: 112px;
+    border: 3px solid cornflowerblue;
+    background-color: whitesmoke;
+    z-index: -1;
+}
+
+/* Ejemplo aplicado */
+div.contenedor{
+    position: relative;
+    border: 3px dashed greenyellow;
+    width: 30%;
+    margin: auto;
+}
+img.imagen{
+    width: 100%;
+    opacity: 0.5;
+}
+div.centro{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+}
+
+/*
+    Propiedad overflow
+    'visible' = es el valor por default y deja que los elementos desborden a los otros y esto sea visible
+    'hidden' = todo lo que se sale del elemento se oculta y no se muestra
+    'scroll' = agrega una barra de scroll para poder visualizar el todo contenido dentro del elemento
+    'auto' = agrega una barra de scroll solo si es necesario
+
+    tambien se puede configurar si se quiere manejar el overflow para el eje x o y 
+    (overflow-x, overflow-y)
+*/
+div.contenedorOverFlow{
+    border: 3px dashed greenyellow;
+    width: 30%;
+    height: 80px;
+    margin: auto;
+    overflow: scroll;
+}
+
+div.contenedor_float1{
+    border: 3px dashed greenyellow;
+    float: left;
+}
+div.contenedor_float2{
+    border: 3px dashed cornflowerblue;
+    float: right;
+}
+div.contenedor_float3{
+    border: 3px dashed darkorange;
+    clear: both;
+    margin: auto;
+}

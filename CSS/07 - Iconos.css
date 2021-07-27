@@ -1,0 +1,44 @@
+/*
+    Se pueden utilizar iconos publicos, que son modificables mediante CSS desde Google, Bootstrap e Ionic
+    Estos iconos al ser llamados desde HTML se aplica con el estilo por default por lo que desde
+    CSS se puede aplicar colores y estilos a estos iconos
+*/
+
+/* Iconos de Bootstrap - icons.getbootstrap.com */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+.icono_rojo_bootstrap{
+    font-size: 2.5em;
+    color: crimson;
+    /*
+        Desde HTML
+            <i class="bi bi-arrow-right-circle-fill icono_rojo_bootstrap"></i>
+            Icono Flecha Roja
+    */
+}
+
+/* Iconos de google - fonts.google.com/icons */
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+.icono_verde_google{
+    vertical-align: bottom;
+    color: green;
+    /*
+        Desde HTML
+            <i class="material-icons icono_verde_google">check_circle</i>
+            Icono Circulo Check
+
+    */
+}
+
+/* Iconos de Ionic - ionic.io/ionicons
+    Estos iconos no son archivos .CSS si no .JS por lo que deben de ser importados como tal, el script
+    debe ser colocado al final del body antes de la etiqueta de cierre </body>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+*/
+.icono_azul_ionic{
+    color: rgb(57, 105, 209);
+    /*
+        Desde HTML
+            <ion-icon name="airplane" class="icono_azul_ionic"></ion-icon>
+            Icono Avión
+    */
+}
