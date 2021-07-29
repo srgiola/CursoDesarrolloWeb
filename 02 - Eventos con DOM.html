@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos con DOM</title>
+</head>
+<body onload="entrar()">
+    <h1 onmouseover="rojo(this)" onmouseout="negro(this)">Eventos con DOM</h1>
+
+    <h3 onclick="this.innerHTML='Cambio el texto por que diste clic aqui'">Clic sobre el texto para cambiarlo 1</h3>
+    
+    <h3 onclick="cambiarTexto(this)">Clic sobre el texto para cambiarlo 2</h3>
+
+    <h3 id="titulo">Clic sobre texto para cambiarlo 3</h3>
+
+    <div id="mensaje"></div><br>
+
+    <div>
+        Nombre (se va a poner en mayusculas): <input type="text" id="nombre" onchange="convertir(this)"/>
+    </div>
+
+    <h3 onmouseup="negro(this)" onmousedown="rojo(this)"> Texto para eventos Mouse </h3>
+
+    <div>
+        Nombre: <input type="text" onfocus="cambiar(this)" onblur="regresar(this)"/>
+    </div>
+
+    <div><br><br>
+        Nombre: <input type="text" id="nombre2" />
+        <br><br>
+        Apellido: <input type="text" id="apellido2"/>
+    </div>
+
+    <script>
+        function cambiarTexto(elemento){
+            elemento.innerHTML = 'Titulo cambiado';
+        };
+
+        document.getElementById('titulo').onclick = cambiarTextoTitulo;
+        function cambiarTextoTitulo(){
+            document.getElementById('titulo').innerHTML = 'Nuevo titulo';
+        }
+
+        function entrar(){
+            alert('Entrando al sitio web');
+            let texto = '';
+            if(navigator.cookieEnabled){
+                texto = 'Cookies habilitadas';
+            }
+            else{
+                texto = 'Cookies no habilitadas';
+            }
+            document.getElementById('mensaje').innerHTML = texto;
+        }
+
+        function convertir(nameIn){
+            nameIn.value = nameIn.value.toUpperCase();
+        }
+
+        function rojo(elemento){
+            elemento.style.color = 'red';
+        }
+        function negro(elemento){
+            elemento.style.color = 'black';
+        }
+
+        function cambiar(elemento){
+            elemento.style.background = 'yellow';
+        }
+        function regresar(elemento){
+            elemento.style.background = 'white';
+        }
+
+        //Tambien se puede manipular los eventos con el AddEventListener
+        document.getElementById('nombre2').addEventListener('focus', cambiar2);
+        function cambiar2(evento){
+            let componente = evento.target;
+            componente.style.background = 'yellow';
+        }
+
+        //Eventos con funciones flecha
+        document.getElementById('apellido2').addEventListener('focus', (evento) => {
+            evento.target.style.background = 'pink';
+        });
+        document.getElementById('apellido2').addEventListener('blur', (evento) => {
+            evento.target.style.background = 'white';
+        });
+
+    </script>
+</body>
+</html>
